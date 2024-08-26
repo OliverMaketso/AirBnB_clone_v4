@@ -3,9 +3,24 @@ header {
     height: 70px;
     width: 100%;
     border-bottom: 1px solid #CCCCCC;
+    position: relative;
 }
 header .logo {
     background: url("../images/logo.png") no-repeat;
     left: 20px;
     height: 100%;
+}
+#api_status {
+    position: absolute; /* Align the div */
+    top: 50%; /* Center vertically */
+    right: 30px; /* 30px from the right border */
+    transform: translateY(-50%); /* Center vertically */
+    width: 40px; /* Circle diameter */
+    height: 40px; /* Circle diameter */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #cccccc; /* Default background color */
+}
+#api_status.available {
+    background-color: #ff545f; /* Background color when available */
+
 }
